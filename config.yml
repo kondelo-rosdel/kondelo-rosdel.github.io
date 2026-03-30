@@ -1,0 +1,22 @@
+title: "Pi-hole + Tailscale Homelab"
+description: "Documentation complète d’un DNS sécurisé sur Raspberry Pi"
+theme: minima
+
+# Navigation
+header_pages:
+  - index.md
+  - homelab.md
+  - installation.md
+  - configuration.md
+  - network.md
+  - commands.md
+  - troubleshooting.md
+  - diagrams.md
+
+# Options
+markdown: kramdown
+highlighter: rouge
+
+# Style
+minima:
+  theme: jekyll-theme-cayman
