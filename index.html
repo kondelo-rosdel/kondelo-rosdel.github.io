@@ -1,10 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-  <title>Mon premier site</title>
+  <meta charset="UTF-8">
+  <title>Mon Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    h1 {
+      font-size: 3em;
+    }
+
+    p {
+      color: #94a3b8;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #64748b;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Bienvenue sur mon site 🚀</h1>
-  <p>Mon premier site avec GitHub Pages !</p>
+
+<header>
+  <h1>👋 Salut, moi c'est [Ton Nom]</h1>
+  <p>Développeur web | Créatif | Passionné</p>
+</header>
+
+<section>
+  <h2>🧑‍💻 À propos</h2>
+  <p>
+    Je suis développeur et je crée des sites modernes et performants.
+  </p>
+</section>
+
+<section>
+  <h2>🚀 Projets</h2>
+  <div class="projects">
+
+    <div class="card">
+      <h3>Projet 1</h3>
+      <p>Description rapide du projet.</p>
+    </div>
+
+    <div class="card">
+      <h3>Projet 2</h3>
+      <p>Description rapide du projet.</p>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>📬 Contact</h2>
+  <p>Email : tonemail@email.com</p>
+</section>
+
+<footer>
+  <p>© 2026 - Ton Nom</p>
+</footer>
+
 </body>
 </html>
