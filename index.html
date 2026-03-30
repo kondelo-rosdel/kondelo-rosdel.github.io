@@ -2,54 +2,93 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Mon Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0f172a;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f172a, #1e293b);
       color: white;
     }
 
     header {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       text-align: center;
-      padding: 80px 20px;
+      padding: 20px;
     }
 
     h1 {
-      font-size: 3em;
+      font-size: 3rem;
+      background: linear-gradient(90deg, #38bdf8, #a78bfa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
-    p {
+    header p {
+      margin-top: 15px;
       color: #94a3b8;
+      font-size: 1.2rem;
+    }
+
+    .btn {
+      margin-top: 25px;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 25px;
+      background: #38bdf8;
+      color: black;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #0ea5e9;
     }
 
     section {
-      padding: 40px 20px;
-      max-width: 900px;
+      padding: 60px 20px;
+      max-width: 1000px;
       margin: auto;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      font-size: 2rem;
     }
 
     .projects {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
     }
 
     .card {
-      background: #1e293b;
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(10px);
       padding: 20px;
-      border-radius: 10px;
+      border-radius: 15px;
       transition: 0.3s;
     }
 
     .card:hover {
-      transform: translateY(-5px);
+      transform: translateY(-8px) scale(1.02);
     }
 
     footer {
       text-align: center;
-      padding: 20px;
+      padding: 30px;
       color: #64748b;
     }
   </style>
@@ -58,29 +97,35 @@
 <body>
 
 <header>
-  <h1>👋 Salut, moi c'est [Ton Nom]</h1>
-  <p>Développeur web | Créatif | Passionné</p>
+  <h1>👋 Salut, moi c’est TON NOM</h1>
+  <p>Développeur web | UI Lover | Créateur d’expériences</p>
+  <button class="btn" onclick="scrollToProjects()">Voir mes projets</button>
 </header>
 
 <section>
   <h2>🧑‍💻 À propos</h2>
   <p>
-    Je suis développeur et je crée des sites modernes et performants.
+    Je crée des sites modernes, rapides et élégants. J’aime transformer des idées en expériences digitales.
   </p>
 </section>
 
-<section>
+<section id="projects">
   <h2>🚀 Projets</h2>
   <div class="projects">
 
     <div class="card">
-      <h3>Projet 1</h3>
-      <p>Description rapide du projet.</p>
+      <h3>🔥 Projet 1</h3>
+      <p>Site moderne avec design responsive.</p>
     </div>
 
     <div class="card">
-      <h3>Projet 2</h3>
-      <p>Description rapide du projet.</p>
+      <h3>⚡ Projet 2</h3>
+      <p>Application web interactive.</p>
+    </div>
+
+    <div class="card">
+      <h3>🎯 Projet 3</h3>
+      <p>Landing page optimisée conversion.</p>
     </div>
 
   </div>
@@ -92,8 +137,14 @@
 </section>
 
 <footer>
-  <p>© 2026 - Ton Nom</p>
+  <p>© 2026 - TON NOM</p>
 </footer>
+
+<script>
+  function scrollToProjects() {
+    document.getElementById("projects").scrollIntoView({ behavior: "smooth" });
+  }
+</script>
 
 </body>
 </html>
