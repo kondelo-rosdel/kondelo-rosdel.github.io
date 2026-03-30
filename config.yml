@@ -20,3 +20,6 @@ highlighter: rouge
 # Style
 minima:
   theme: jekyll-theme-cayman
+
+sass:
+  style: compressed
