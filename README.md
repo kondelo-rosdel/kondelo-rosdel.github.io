@@ -9,7 +9,7 @@ Projet HomeLab basé sur un Raspberry Pi Zero 2 W.
 
 ## 🌐 Documentation complète
 
-👉 https://TON-USERNAME.github.io/pi-hole-tailscale-homelab/
+👉 https://kondelo-rosdel.github.io/pi-hole-tailscale-homelab/
 
 ## 📸 Aperçu
 
